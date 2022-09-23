@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.36.0" timestamp="2022-09-23T13:08:29.980">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.36.0" timestamp="2022-09-23T20:08:39.540">
 <file name="/home/osallabwan/Bureau/TP1 - GenLog/GildedRose/src/test/java/com/gildedrose/GildedRoseTest.java">
 <violation beginline="21" endline="21" begincolumn="18" endcolumn="44" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
-The String literal "Not Mentioned in the code" appears 4 times in this file; the first occurrence is on line 21
+The String literal "Not Mentioned in the code" appears 8 times in this file; the first occurrence is on line 21
 </violation>
-<violation beginline="23" endline="23" begincolumn="18" endcolumn="28" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
-The String literal "Aged Brie" appears 6 times in this file; the first occurrence is on line 23
+<violation beginline="25" endline="25" begincolumn="18" endcolumn="28" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Aged Brie" appears 8 times in this file; the first occurrence is on line 25
 </violation>
-<violation beginline="26" endline="26" begincolumn="18" endcolumn="60" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
-The String literal "Backstage passes to a TAFKAL80ETC concert" appears 12 times in this file; the first occurrence is on line 26
+<violation beginline="29" endline="29" begincolumn="18" endcolumn="60" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Backstage passes to a TAFKAL80ETC concert" appears 22 times in this file; the first occurrence is on line 29
 </violation>
-<violation beginline="32" endline="32" begincolumn="18" endcolumn="45" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
-The String literal "Sulfuras, Hand of Ragnaros" appears 4 times in this file; the first occurrence is on line 32
+<violation beginline="40" endline="40" begincolumn="18" endcolumn="45" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Sulfuras, Hand of Ragnaros" appears 8 times in this file; the first occurrence is on line 40
 </violation>
-<violation beginline="36" endline="57" begincolumn="12" endcolumn="5" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'expectedOutput' (lines '36'-'57').
+<violation beginline="46" endline="77" begincolumn="12" endcolumn="5" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'expectedOutput' (lines '46'-'77').
 </violation>
 </file>
 <file name="/home/osallabwan/Bureau/TP1 - GenLog/GildedRose/src/test/java/com/gildedrose/TexttestFixture.java">
