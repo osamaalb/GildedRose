@@ -47,7 +47,7 @@
     </module>
 
     <module name="TreeWalker">
-        <property name="tabWidth" value="2"/>
+        <property name="tabWidth" value="4"/>
 
         <!-- Annotations -->
         <!-- http://checkstyle.sourceforge.net/config_annotation.html -->
@@ -146,7 +146,10 @@
         <module name="ExplicitInitialization"/>
         <module name="FallThrough"/>
         <module name="FinalLocalVariable"/>
-        <module name="HiddenField"/>
+        <module name="HiddenField">
+            <property name="ignoreSetter" value="true" />
+            <property name="ignoreConstructorParameter" value="true" />
+        </module>
         <module name="IllegalCatch"/>
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
@@ -162,14 +165,14 @@
             <property name="max" value="1"/>
         </module>
         <module name="NestedIfDepth">
-            <property name="max" value="1"/>
+            <property name="max" value="2"/>
         </module>
         <module name="NestedTryDepth">
           <property name="max" value="1"/>
         </module>
         <module name="NoClone"/>
         <module name="NoFinalizer"/>
-        <module name="RedundantThrows"/>
+        <!-- <module name="RedundantThrows"/> -->
         <module name="OneStatementPerLine"/>
         <module name="OverloadMethodsDeclarationOrder"/>
         <module name="PackageDeclaration"/>
@@ -225,11 +228,11 @@
         <module name="UpperEll"/>
         <module name="ArrayTypeStyle"/>
         <module name="Indentation">
-            <property name="basicOffset" value="2"/>
-            <property name="caseIndent" value="2"/>
-            <property name="throwsIndent" value="2"/>
-            <property name="arrayInitIndent" value="2"/>
-            <property name="lineWrappingIndentation" value="2"/>
+            <property name="basicOffset" value="4"/>
+            <property name="caseIndent" value="4"/>
+            <property name="throwsIndent" value="4"/>
+            <property name="arrayInitIndent" value="4"/>
+            <property name="lineWrappingIndentation" value="4"/>
         </module>
         <module name="TrailingComment"/>
         <module name="OuterTypeFilename"/>
