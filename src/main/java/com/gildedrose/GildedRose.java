@@ -2,12 +2,13 @@ package com.gildedrose;
 
 class GildedRose {
     Item[] items;
+    
     private static final String AGED_PRIE = "Aged Brie";
     private static final String BACKSTAGE = "Backstage passes to a TAFKAL80ETC concert";
     private static final String SULFURAS = "Sulfuras, Hand of Ragnaros";
     private static final int QUALITY_LOWER_LIMIT = 0;
     private static final int QUALITY_UPPER_LIMIT = 50;
-    private static final int[] SELL_IN_THRESHOLDS = new int[] {0, 6, 11};
+    private static final int[] SELL_IN_THRESHOLDS = {0, 6, 11};
 
     public GildedRose(Item[] items) {
         this.items = items;
