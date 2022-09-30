@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.36.0" timestamp="2022-09-23T20:08:39.540">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.36.0" timestamp="2022-09-30T14:53:25.920">
 <file name="/home/osallabwan/Bureau/TP1 - GenLog/GildedRose/src/test/java/com/gildedrose/GildedRoseTest.java">
-<violation beginline="21" endline="21" begincolumn="18" endcolumn="44" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+<violation beginline="21" endline="21" begincolumn="18" endcolumn="44" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testNameNotInCodeSellInLessThanZeroQualGreaterThanZero" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
 The String literal "Not Mentioned in the code" appears 8 times in this file; the first occurrence is on line 21
 </violation>
-<violation beginline="25" endline="25" begincolumn="18" endcolumn="28" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
-The String literal "Aged Brie" appears 8 times in this file; the first occurrence is on line 25
+<violation beginline="25" endline="35" begincolumn="12" endcolumn="5" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testNameNotInCodeSellInLessThanZeroQualGreaterThanZero" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'expectedOutput' (lines '25'-'35').
 </violation>
-<violation beginline="29" endline="29" begincolumn="18" endcolumn="60" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
-The String literal "Backstage passes to a TAFKAL80ETC concert" appears 22 times in this file; the first occurrence is on line 29
+<violation beginline="64" endline="64" begincolumn="27" endcolumn="37" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testAgedBrieSellInGreaterThanZero" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Aged Brie" appears 8 times in this file; the first occurrence is on line 64
 </violation>
-<violation beginline="40" endline="40" begincolumn="18" endcolumn="45" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
-The String literal "Sulfuras, Hand of Ragnaros" appears 8 times in this file; the first occurrence is on line 40
+<violation beginline="112" endline="112" begincolumn="27" endcolumn="69" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testBackstageSellInLessThan6QualLessThan50" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Backstage passes to a TAFKAL80ETC concert" appears 22 times in this file; the first occurrence is on line 112
 </violation>
-<violation beginline="46" endline="77" begincolumn="12" endcolumn="5" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testQuality" variable="expectedOutput" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'expectedOutput' (lines '46'-'77').
+<violation beginline="244" endline="244" begincolumn="27" endcolumn="54" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testSulfurasSellInGreaterThan0QualGreaterThan50" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Sulfuras, Hand of Ragnaros" appears 8 times in this file; the first occurrence is on line 244
 </violation>
 </file>
 <file name="/home/osallabwan/Bureau/TP1 - GenLog/GildedRose/src/test/java/com/gildedrose/TexttestFixture.java">
