@@ -23,51 +23,51 @@ class GildedRose {
     }
 
     void updateQuality() {
-        for (int i = 0; i < items.length; i++) {
-            if (!items[i].getName().equals(AGED_PRIE)
-                    && !items[i].getName().equals(BACKSTAGE)) {
-                if (items[i].getQuality() > QUALITY_LOWER_LIMIT && !items[i].getName().equals(SULFURAS)) {
-                    items[i].setQuality(items[i].getQuality() - 1);
+        for (Item item : items) {
+            if (!item.getName().equals(AGED_PRIE)
+                    && !item.getName().equals(BACKSTAGE)) {
+                if (item.getQuality() > QUALITY_LOWER_LIMIT && !item.getName().equals(SULFURAS)) {
+                    item.setQuality(item.getQuality() - 1);
                 }
-            } else if (items[i].getQuality() < QUALITY_UPPER_LIMIT) {
-                items[i].setQuality(items[i].getQuality() + 1);
+            } else if (item.getQuality() < QUALITY_UPPER_LIMIT) {
+                item.setQuality(item.getQuality() + 1);
             }
 
-            if (items[i].getName().equals(BACKSTAGE) && items[i].getQuality() < QUALITY_UPPER_LIMIT) {
-                if (items[i].getSellIn() < SELL_IN_THRESHOLDS[2]) {
-                    items[i].setQuality(items[i].getQuality() + 1);
+            if (item.getName().equals(BACKSTAGE) && item.getQuality() < QUALITY_UPPER_LIMIT) {
+                if (item.getSellIn() < SELL_IN_THRESHOLDS[2]) {
+                    item.setQuality(item.getQuality() + 1);
                 }
 
-                if (items[i].getSellIn() < SELL_IN_THRESHOLDS[1] && items[i].getQuality() < QUALITY_UPPER_LIMIT) {
-                    items[i].setQuality(items[i].getQuality() + 1);
+                if (item.getSellIn() < SELL_IN_THRESHOLDS[1] && item.getQuality() < QUALITY_UPPER_LIMIT) {
+                    item.setQuality(item.getQuality() + 1);
                 }
             }
 
-            updateQualityBasedOnSellIn(i);
+            updateQualityBasedOnSellIn(item);
         }
     }
 
-    private void updateQualityBasedOnSellIn(int i) {
-        if (!items[i].getName().equals(SULFURAS)) {
-            items[i].setSellIn(items[i].getSellIn() - 1);
+    private void updateQualityBasedOnSellIn(Item item) {
+        if (!item.getName().equals(SULFURAS)) {
+            item.setSellIn(item.getSellIn() - 1);
         }
 
-        if (items[i].getSellIn() < SELL_IN_THRESHOLDS[0]) {
+        if (item.getSellIn() < SELL_IN_THRESHOLDS[0]) {
             if (
-                !items[i].getName().equals(AGED_PRIE)
-                    && !items[i].getName().equals(BACKSTAGE)
-                    && !items[i].getName().equals(SULFURAS)
-                    && items[i].getQuality() > QUALITY_LOWER_LIMIT
+                !item.getName().equals(AGED_PRIE)
+                    && !item.getName().equals(BACKSTAGE)
+                    && !item.getName().equals(SULFURAS)
+                    && item.getQuality() > QUALITY_LOWER_LIMIT
             ) {
-                items[i].setQuality(items[i].getQuality() - 1);
+                item.setQuality(item.getQuality() - 1);
             }
 
-            if (items[i].getName().equals(BACKSTAGE)) {
-                items[i].setQuality(0);
+            if (item.getName().equals(BACKSTAGE)) {
+                item.setQuality(0);
             }
 
-            if (items[i].getName().equals(AGED_PRIE) && items[i].getQuality() < QUALITY_UPPER_LIMIT) {
-                items[i].setQuality(items[i].getQuality() + 1);
+            if (item.getName().equals(AGED_PRIE) && item.getQuality() < QUALITY_UPPER_LIMIT) {
+                item.setQuality(item.getQuality() + 1);
             }
         }
     }
