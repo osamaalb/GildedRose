@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2022-09-30T12:53:13" hostname="vm-etu-osallabwan.local.isima.fr" time="0.084">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2022-09-30T13:17:43" hostname="vm-etu-osallabwan.local.isima.fr" time="0.078">
   <properties/>
-  <testcase name="Test Sulfuras SellIn greater than 0 quality less than 0" classname="com.gildedrose.GildedRoseTest" time="0.03"/>
-  <testcase name="Test name not in code sellIn less than 0 quality greater than 0" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test Sulfuras SellIn greater than 0 quality less than 0" classname="com.gildedrose.GildedRoseTest" time="0.028"/>
+  <testcase name="Test name not in code sellIn less than 0 quality greater than 0" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test Aged Brie SellIn less than 0 quality greater than 50" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
-  <testcase name="Test Backstage SellIn 11 quality 50" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
-  <testcase name="Test Aged Brie SellIn greater than 0" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test Backstage SellIn 11 quality 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test Aged Brie SellIn greater than 0" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test Sulfuras SellIn greater than 0 quality greater than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test Backstage SellIn 11 quality less than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test Aged Brie SellIn less than 0 quality less than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test Aged Brie SellIn less than 0 quality 49" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test Backstage SellIn less than 11 quality less than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test Backstage SellIn Less Than 6 quality 47" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
-  <testcase name="Test Backstage SellIn Less Than 6 quality 48" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test Backstage SellIn Less Than 6 quality 47" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test Backstage SellIn Less Than 6 quality 48" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test Backstage SellIn Less Than 6 quality 49" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test Sulfuras SellIn 0 quality less than 50" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test Sulfuras SellIn 0 quality less than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test Sulfuras SellIn less than 0 quality less than 50" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
   <testcase name="Test Backstage SellIn Less Than 11 quality 49" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test name not in code sellIn greater than 0" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test Backstage SellIn 6 quality less than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test Backstage SellIn less than 0 quality less than 50" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test Backstage SellIn greater than 11 quality less than 50" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="Test Backstage SellIn less than 6 quality less than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test Backstage SellIn less than 6 quality less than 50" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test name not in code sellIn less than 0 quality equals 0" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

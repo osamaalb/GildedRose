@@ -53,21 +53,21 @@ class GildedRose {
         }
 
         if (item.getSellIn() < SELL_IN_THRESHOLDS[0]) {
-            if (
-                !item.getName().equals(AGED_PRIE)
-                    && !item.getName().equals(BACKSTAGE)
-                    && !item.getName().equals(SULFURAS)
-                    && item.getQuality() > QUALITY_LOWER_LIMIT
-            ) {
-                item.setQuality(item.getQuality() - 1);
-            }
-
-            if (item.getName().equals(BACKSTAGE)) {
-                item.setQuality(0);
-            }
-
-            if (item.getName().equals(AGED_PRIE) && item.getQuality() < QUALITY_UPPER_LIMIT) {
-                item.setQuality(item.getQuality() + 1);
+            switch (item.getName()) {
+                case AGED_PRIE:
+                    if (item.getQuality() < QUALITY_UPPER_LIMIT) {
+                        item.setQuality(item.getQuality() + 1);
+                    }
+                    break;
+                case BACKSTAGE:
+                    item.setQuality(0);
+                    break;
+                case SULFURAS:
+                    break;
+                default:
+                    if (item.getQuality() > QUALITY_LOWER_LIMIT) {
+                        item.setQuality(item.getQuality() - 1);
+                    }
             }
         }
     }
