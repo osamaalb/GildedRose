@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.36.0" timestamp="2022-09-30T14:53:25.920">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.36.0" timestamp="2022-10-06T14:44:59.802">
 <file name="/home/osallabwan/Bureau/TP1 - GenLog/GildedRose/src/test/java/com/gildedrose/GildedRoseTest.java">
 <violation beginline="21" endline="21" begincolumn="18" endcolumn="44" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testNameNotInCodeSellInLessThanZeroQualGreaterThanZero" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
 The String literal "Not Mentioned in the code" appears 8 times in this file; the first occurrence is on line 21
@@ -15,6 +15,9 @@ The String literal "Backstage passes to a TAFKAL80ETC concert" appears 22 times 
 </violation>
 <violation beginline="244" endline="244" begincolumn="27" endcolumn="54" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testSulfurasSellInGreaterThan0QualGreaterThan50" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
 The String literal "Sulfuras, Hand of Ragnaros" appears 8 times in this file; the first occurrence is on line 244
+</violation>
+<violation beginline="292" endline="292" begincolumn="27" endcolumn="36" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testConjuredSellInLessThan0" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Conjured" appears 4 times in this file; the first occurrence is on line 292
 </violation>
 </file>
 <file name="/home/osallabwan/Bureau/TP1 - GenLog/GildedRose/src/test/java/com/gildedrose/TexttestFixture.java">

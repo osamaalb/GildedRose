@@ -85,9 +85,9 @@ class GildedRoseTest {
   @Test
   @DisplayName("Test Aged Brie SellIn less than 0 quality greater than 50")
   void testAgedBrieSellInLessThanZeroQualGreaterThan50() {
-    Item input = new Item("Aged Brie", -2, 55);
+    Item input = new Item("Aged Brie", -2, 50);
     
-    Item expectedOutput = new Item("Aged Brie", -3, 55);
+    Item expectedOutput = new Item("Aged Brie", -3, 50);
         
     GildedRose app = new GildedRose(new Item[] {input});
     app.updateQuality();
@@ -280,6 +280,30 @@ class GildedRoseTest {
     Item input = new Item("Sulfuras, Hand of Ragnaros", 5, -1);
     
     Item expectedOutput = new Item("Sulfuras, Hand of Ragnaros", 5, -1);
+        
+    GildedRose app = new GildedRose(new Item[] {input});
+    app.updateQuality();
+    assertThat(input.toString(), is(expectedOutput.toString()));
+  }
+  
+  @Test
+  @DisplayName("Test Conjured SellIn less than 0")
+  void testConjuredSellInLessThan0() {
+    Item input = new Item("Conjured", -1, 10);
+    
+    Item expectedOutput = new Item("Conjured", -2, 6);
+        
+    GildedRose app = new GildedRose(new Item[] {input});
+    app.updateQuality();
+    assertThat(input.toString(), is(expectedOutput.toString()));
+  }
+  
+  @Test
+  @DisplayName("Test Conjured SellIn greater than or equal 0")
+  void testConjuredSellInGreaterThan0() {
+    Item input = new Item("Conjured", 5, 10);
+    
+    Item expectedOutput = new Item("Conjured", 4, 8);
         
     GildedRose app = new GildedRose(new Item[] {input});
     app.updateQuality();
