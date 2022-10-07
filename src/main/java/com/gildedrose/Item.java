@@ -68,39 +68,37 @@ public final class Item {
 
         this.sellIn -= 1;
 
+        if (this.name.equals(BACKSTAGE)) {
+            if (this.sellIn < SELL_IN_THRESHOLDS[0]) {
+                this.quality = 0;
+            } else if (this.sellIn < SELL_IN_THRESHOLDS[1]) {
+                this.setQuality(this.quality + 3);
+            } else if (this.sellIn < SELL_IN_THRESHOLDS[2]) {
+                this.setQuality(this.quality + 2);
+            } else {
+                this.setQuality(this.quality + 1);
+            }
+            return;
+        }
+
+        int qualityChangeRate;
+
         switch (this.name) {
             case AGED_PRIE:
-                if (this.sellIn < SELL_IN_THRESHOLDS[0]) {
-                    this.setQuality(this.quality + 2);
-                } else {
-                    this.setQuality(this.quality + 1);
-                }
-                break;
-            case BACKSTAGE:
-                if (this.sellIn < SELL_IN_THRESHOLDS[0]) {
-                    this.quality = 0;
-                } else if (this.sellIn < SELL_IN_THRESHOLDS[1]) {
-                    this.setQuality(this.quality + 3);
-                } else if (this.sellIn < SELL_IN_THRESHOLDS[2]) {
-                    this.setQuality(this.quality + 2);
-                } else {
-                    this.setQuality(this.quality + 1);
-                }
+                qualityChangeRate = 1;
                 break;
             case CONJURED:
-                if (this.sellIn < SELL_IN_THRESHOLDS[0]) {
-                    this.setQuality(this.quality - 4);
-                } else {
-                    this.setQuality(this.quality - 2);
-                }
+                qualityChangeRate = -2;
                 break;
             default:
-                if (this.sellIn < SELL_IN_THRESHOLDS[0]) {
-                    this.setQuality(this.quality - 2);
-                } else {
-                    this.setQuality(this.quality - 1);
-                }
+                qualityChangeRate = -1;
                 break;
+        }
+
+        if (this.sellIn < SELL_IN_THRESHOLDS[0]) {
+            this.setQuality(this.quality + (qualityChangeRate * 2));
+        } else {
+            this.setQuality(this.quality + qualityChangeRate);
         }
     }
 }
