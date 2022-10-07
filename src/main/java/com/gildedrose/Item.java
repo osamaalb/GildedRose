@@ -81,7 +81,7 @@ public final class Item {
             return;
         }
 
-        int qualityChangeRate;
+        final int qualityChangeRate;
 
         switch (this.name) {
             case AGED_PRIE:
