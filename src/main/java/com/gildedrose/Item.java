@@ -34,6 +34,14 @@ public final class Item {
 
     public void setQuality(int quality) {
         this.quality = quality;
+
+        if (quality < QUALITY_LOWER_LIMIT) {
+            this.quality = QUALITY_LOWER_LIMIT;
+        }
+
+        if (quality > QUALITY_UPPER_LIMIT) {
+            this.quality = QUALITY_UPPER_LIMIT;
+        }
     }
 
     public String getName() {
@@ -62,35 +70,35 @@ public final class Item {
 
         switch (this.name) {
             case AGED_PRIE:
-                this.quality = Math.min(this.quality + 1, QUALITY_UPPER_LIMIT);
-
                 if (this.sellIn < SELL_IN_THRESHOLDS[0]) {
-                    this.quality = Math.min(this.quality + 1, QUALITY_UPPER_LIMIT);
+                    this.setQuality(this.quality + 2);
+                } else {
+                    this.setQuality(this.quality + 1);
                 }
                 break;
             case BACKSTAGE:
-                this.quality = Math.min(this.quality + 1, QUALITY_UPPER_LIMIT);
-
                 if (this.sellIn < SELL_IN_THRESHOLDS[0]) {
                     this.quality = 0;
                 } else if (this.sellIn < SELL_IN_THRESHOLDS[1]) {
-                    this.quality = Math.min(this.quality + 2, QUALITY_UPPER_LIMIT);
+                    this.setQuality(this.quality + 3);
                 } else if (this.sellIn < SELL_IN_THRESHOLDS[2]) {
-                    this.quality = Math.min(this.quality + 1, QUALITY_UPPER_LIMIT);
+                    this.setQuality(this.quality + 2);
+                } else {
+                    this.setQuality(this.quality + 1);
                 }
                 break;
             case CONJURED:
                 if (this.sellIn < SELL_IN_THRESHOLDS[0]) {
-                    this.quality = Math.max(this.quality - 4, QUALITY_LOWER_LIMIT);
+                    this.setQuality(this.quality - 4);
                 } else {
-                    this.quality = Math.max(this.quality - 2, QUALITY_LOWER_LIMIT);
+                    this.setQuality(this.quality - 2);
                 }
                 break;
             default:
-                this.quality = Math.max(this.quality - 1, QUALITY_LOWER_LIMIT);
-
                 if (this.sellIn < SELL_IN_THRESHOLDS[0]) {
-                    this.quality = Math.max(this.quality - 1, QUALITY_LOWER_LIMIT);
+                    this.setQuality(this.quality - 2);
+                } else {
+                    this.setQuality(this.quality - 1);
                 }
                 break;
         }
